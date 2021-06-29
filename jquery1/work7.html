@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryの練習</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script src="//code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#btn').on('click', function(){
+        $('.q07').attr("class", "q07_a");
+    });
+});
+</script>
+<style>
+.q07_a {
+	text-decoration: underline;
+	color: #00F;
+}
+</style>
+</head>
+<body>
+	<button id="btn">クリック</button>
+	<p class="q07">高橋みなみ</p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryの練習</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script src="//code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript">
+$(function(){
+    // $(".q37").on('click', function(e) {
+    //   e.preventDefault();
+    // });
+    // $(".q37").on('click', function() {
+    //   return false;
+    // });
+    $('ul').on('click', '.q37', function() {
+      return false;
+    });
+});
+</script>
+</head>
+<body>
+	<ul>
+		<li><a class="q37" href="http://www.yahoo.co.jp/">Yahoo</a></li>
+		<li><a href="http://www.rakuten.co.jp/">Rakuten</a></li>
+		<li><a class="q37" href="http://www.amazon.co.jp/">amazon</a></li>
+		<li><a href="http://www.google.co.jp/">Google</a></li>
+	</ul>
+</body>
+</html>

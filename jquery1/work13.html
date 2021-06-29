@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryの練習</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script src="//code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#btn').on('click', function(){
+        $("ul#q08 li").after("<li>篠田麻里子</li>")
+        .before("<li>前田敦子</li>");
+    });
+});
+</script>
+</head>
+<body>
+	<button id="btn">クリック</button>
+	<ul id="q08">
+		<li>大島優子</li>
+	</ul>
+</body>
+</html>

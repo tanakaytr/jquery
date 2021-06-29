@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryの練習</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script src="//code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#btn').on('click', function(){
+        $("p#q18").toggleClass('ske');
+    });
+});
+</script>
+</head>
+<style>
+.ske{color : #00F; font-weight : 900; font-size : 24px;}
+</style>
+<body>
+	<button id="btn">クリック</button>
+	<p id="q18" class="akb">ゆきりん</p>
+</body>
+</html>

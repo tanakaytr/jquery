@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryの練習</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script src="//code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#btn').on('click', function(){
+        $('#q02').replaceWith("<p id='q02'>フライングゲット</p>");
+    });
+});
+</script>
+<style>
+#q02 {
+	color: red;
+	background-color: yellow;
+}
+</style>
+</head>
+<body>
+	<button id="btn">クリック</button>
+	<p id="q02">ポニーテールとシュシュ</p>
+</body>
+</html>

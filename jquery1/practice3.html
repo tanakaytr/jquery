@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>jQueryの練習</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script src="//code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#btn').on('click', function(){
+        console.log("Hello, jQuery");
+    });
+});
+</script>
+<style>
+#q01 {
+	color: red;
+}
+</style>
+</head>
+<body>
+	<button id="btn">クリック</button>
+	<p id="q01">恋するフォーチュンクッキー</p>
+</body>
+</html>

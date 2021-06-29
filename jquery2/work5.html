@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryの練習</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script src="//code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#q35").click(function(){
+    $('#q35').animate({
+        "marginLeft" : "308px"
+        });
+    });
+});
+</script>
+</head>
+<body>
+	<div id="mark">ここがセンター</div>
+	<div id="q35_box">
+		<div id="q35">センターを目指せ！</div>
+	</div>
+	<style>
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#mark {
+	width: 150px;
+	height: 30px;
+	margin: 0 auto;
+	background-color: #Ff0;
+	text-align: center;
+}
+
+#q35_box {
+	position: relative;
+	height: 150px;
+	background: #F00;
+}
+
+#q35 {
+	width: 150px;
+	height: 150px;
+	background: #F0F;
+	position: absolute;
+	text-align: cwenter;
+}
+</style>
+</body>
+</html>

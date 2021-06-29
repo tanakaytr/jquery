@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryの練習</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script src="//code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#btn').on(function(){
+        $("#q31 img").img({"width" : "500px", "height" : "300px"});
+    });
+});
+</script>
+</head>
+<style>
+img{width : 500px; height : 300px;}
+</style>
+<body>
+	<div id="q31">
+		<img src="http://no1s.biz/kenshu/image/no1solutions.png" />
+	</div>
+</body>
+</html>

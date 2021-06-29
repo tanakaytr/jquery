@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryの練習</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script src="//code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#btn').on('click', function(){
+        $('#q02').empty();
+    });
+});
+</script>
+<style>
+#q02 {
+	color: red;
+	background-color: yellow;
+}
+</style>
+</head>
+<body>
+	<button id="btn">クリック</button>
+	<ul id="q02">
+	<li>前田敦子</li>
+	<li>大島優子</li>
+	<li>高橋みなみ</li>
+	</ul>
+</body>
+</html>

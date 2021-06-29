@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryの練習</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script src="//code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#btn').on('click', function(){
+        $("p.q08 a").attr("target", "_blank");
+    });
+});
+</script>
+</head>
+<body>
+	<button id="btn">クリック</button>
+	<p class="q08">
+		<a href="#">前田敦子</a>
+	</p>
+	<p>
+		<a href="#">篠原</a>
+	</p>
+	<p class="q08">
+		<a href="#">大島優子</a>
+	</p>
+	<p>
+		<a href="#">山本彩</a>
+	</p>
+	<p class="q08">
+		<a href="#">篠田麻里子</a>
+	</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryの練習</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script src="//code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript">
+$(function(){
+$('#q39').on("click", function(){
+    var x = $('input[name=fruits]:checked').val();
+    var vegetables_val = [];
+    $('input[name=vegetables]:checked').each(function(){
+        vegetables_val.push($(this).val());
+    });
+    $('#q39_answer').text(
+    'フルーツ : ' +  x + '\n' + 
+    '野菜 : ' +  vegetables_val
+    );
+});
+});
+</script>
+</head>
+<body>
+	<div>
+		<form>
+			<div>フルーツ 
+			<label><input type="radio" name="fruits" value="orange" />オレンジ</label>
+			<label><input type="radio" name="fruits" value="apple" />リンゴ</label>
+			<label><input type="radio" name="fruits" value="banana" />バナナ</label>
+			</div>
+			<div>野菜 
+			<label><input type="checkbox" name="vegetables" value="carrot" />人参</label> 
+			<label><input type="checkbox" name="vegetables" value="onion" />玉ねぎ</label> 
+			<label><input type="checkbox" name="vegetables" value="potato" />芋</label>
+			</div>
+			<div>
+				<input type="button" id="q39" value="クリック" />
+			</div>
+		</form>
+	</div>
+	<div id="q39_answer"></div>
+</body>
+</html>

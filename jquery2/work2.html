@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryの練習</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script src="//code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('.kami7').on(function(){
+        $("p#q33").append("神7");
+    });
+});
+</script>
+</head>
+<body>
+	<ul class="kami7">
+		<li>前田敦子</li>
+		<li>大島優子</li>
+		<li>篠田麻里子</li>
+		<li>板橋朋美</li>
+		<li>渡辺麻友</li>
+		<li>高橋みなみ</li>
+		<li>小島陽菜</li>
+	</ul>
+	<p id="q33"></p>
+</body>
+</html>
